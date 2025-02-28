@@ -2,9 +2,9 @@ import re
 
 #1
 def match_a_b(s):
-    return re.fullmatch(r'a+b*', s)
+    return re.fullmatch(r'a[b]*', s)
 
-print(match_a_b("aaaa"))
+print(match_a_b("abbb"))
 
 #2
 def match_a_bb(s):
